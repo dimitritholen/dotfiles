@@ -2,7 +2,7 @@ oh-my-posh --init --shell pwsh --config ~/M365Princess.omp.json | Invoke-Express
 
 function Get-GitStatus { & git status -sb $args }
 New-Alias -Name s -Value Get-GitStatus -Force -Option AllScope
-function Get-GitCommit { & git commit -ev $args }
+function Get-GitCommit { & git commit -vm $args }
 New-Alias -Name c -Value Get-GitCommit -Force -Option AllScope
 function Get-GitAdd { & git add --all $args }
 New-Alias -Name ga -Value Get-GitAdd -Force -Option AllScope
